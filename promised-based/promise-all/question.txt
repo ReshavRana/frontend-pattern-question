@@ -1,0 +1,22 @@
+**Question:**
+
+Implement your own version of `Promise.all` from scratch. Your implementation should:
+
+1. **Accept an iterable of promises:** This could be an array or any other iterable object.
+2. **Return a new promise:** This promise should resolve when all input promises have resolved, or reject as soon as one of them rejects.
+3. **Handle errors gracefully:** If any input promise rejects, the returned promise should reject with the error.
+4. **Provide a way to access the resolved values:** The resolved values of all input promises should be available in the resolved value of the returned promise.
+
+**Additional Considerations:**
+
+* **Performance:** Your implementation should be efficient, especially when dealing with a large number of promises.
+* **Error Handling:** Consider how to provide detailed error information in case of rejection.
+* **Edge Cases:** Test your implementation with various input scenarios, including empty arrays and mixed promise states.
+
+**Follow-up Questions:**
+
+1. **How would you handle a scenario where you want to limit the number of concurrent promises executing at a time?**
+2. **What are the potential performance implications of your implementation, especially when dealing with a large number of promises?**
+3. **How would you handle a situation where you need to cancel or timeout pending promises?**
+4. **Can you think of any use cases where a custom `Promise.all` implementation might be beneficial over the native one?**
+5. **How would you test your implementation to ensure its correctness and robustness?**
