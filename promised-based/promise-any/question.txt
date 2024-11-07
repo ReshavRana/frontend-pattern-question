@@ -1,0 +1,18 @@
+Implement your own version of Promise.any in JavaScript. 
+Your implementation should:
+
+Accept an iterable of promises.
+Return a new promise.
+Resolve as soon as the first input promise resolves, with the result of that promise.
+Reject only if all input promises reject, with an array of rejection reasons.
+Additional Considerations:
+
+Error Handling: How do you ensure that the rejection reasons are collected correctly if multiple promises reject?
+Performance: What techniques can you employ to optimize the performance of your implementation, especially when dealing with a large number of promises?
+Edge Cases: How do you handle edge cases like empty input arrays or input values that are not promises?
+Flexibility: Can your implementation handle mixed input types, such as promises and non-promise values?
+Testing: What test cases would you write to thoroughly test your implementation?
+Bonus Challenge:
+
+Custom Timeout: How would you add a timeout mechanism to your Promise.any implementation, so that if all promises take longer than a specified time, the overall promise rejects with a timeout error?
+Cancellation: How would you implement a cancellation mechanism to allow the user to cancel the Promise.any operation before any promise resolves?
